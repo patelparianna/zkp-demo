@@ -4,7 +4,7 @@ import random
 
 st.title("Zero-Knowledge Proof Fintech Demo")
 
-df = pd.read_csv("creditcard.csv")
+df = pd.read_csv("creditcard_sample.csv")
 selected = st.number_input("Select transaction index:", min_value=0, max_value=len(df)-1, value=0)
 txn = df.iloc[[selected]]
 st.write("Selected Transaction:")
